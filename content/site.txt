@@ -1,0 +1,25 @@
+Title: Lanyon
+
+----
+
+Author: 
+
+----
+
+Tagline: A Kirby theme
+
+----
+
+Copyright: 
+
+----
+
+Description: A reserved ~~Jekyll~~ (link: https://getkirby.com text: Kirby popup: yes) theme that places the utmost gravity on content with a hidden drawer. Made by (link: https://twitter.com/mdo text: @mdo popup: yes).
+
+----
+
+Github: https://github.com/poole/lanyon
+
+----
+
+Version: 1.0.0
