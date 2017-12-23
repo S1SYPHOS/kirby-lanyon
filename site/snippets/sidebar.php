@@ -12,13 +12,13 @@
   <nav class="sidebar-nav">
 
     <!--
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
+      The code below dynamically generates a sidebar nav of all
+      visible pages, see https://getkirby.com/docs/cookbook/menus
     -->
 
     <?php if($pages->visible()->count()) : ?>
       <?php foreach($pages->visible() as $item) : ?>
-      <a class="sidebar-nav-item<?php e($item->isOpen(), ' active') ?>" href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+      <a class="sidebar-nav-item<?php e($item->isOpen(), ' active') ?>" href="<?= $item->url() ?>"><?= $item->title() ?></a>
       <?php endforeach ?>
     <?php endif ?>
       
@@ -28,8 +28,6 @@
   </nav>
 
   <div class="sidebar-item">
-    <p>
-      &copy; <?= date('Y') ?>. All rights reserved.
-    </p>
+    <p>&copy; <?= date('Y') ?>. All rights reserved.</p>
   </div>
 </div>
